@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        MyConfig {
+            keyAlias 'voznia'
+            keyPassword 'First.1995'
+            storeFile file('C:\\Users\\Anton\\Documents\\Work\\keys\\myKey.jks')
+            storePassword 'Nolik.1995'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.cti.statscsgo"
+        minSdkVersion 11
+        targetSdkVersion 24
+        versionCode 8
+        versionName "1.3"
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.MyConfig
+        }
+        realise {
+            debuggable false
+            signingConfig signingConfigs.MyConfig
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:24.0.0'
+    implementation 'com.android.support:design:24.0.0'
+    implementation files('libs/jsoup-1.7.3.jar')
+}

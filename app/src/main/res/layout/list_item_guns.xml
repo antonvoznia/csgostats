@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageGun"
+        android:src="@drawable/awp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.cti.statscsgo.custom.CustomTextView
+        android:background="#696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Kills"
+        android:id="@+id/textView4"
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_alignTop="@+id/imageGun"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView_killGun2"
+        android:layout_toStartOf="@+id/textView_killGun2" />
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:background="#696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_killGun2"
+        android:text="-"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hits"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/imageGun"
+        android:layout_toLeftOf="@+id/textView_killGun2"
+        android:layout_toStartOf="@+id/textView_killGun2" />
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_hitsGun2"
+        android:text="-"
+        android:layout_below="@+id/textView_killGun2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:background="#696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Shots"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/imageGun"
+        android:layout_toLeftOf="@+id/textView_hitsGun2"
+        android:layout_toStartOf="@+id/textView_hitsGun2" />
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:background="#696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_shotsGun2"
+        android:text="-"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.cti.statscsgo.custom.CustomTextView
+        android:background="#000000"
+        foo:customFont="fonts/RobotoBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/guns_name"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

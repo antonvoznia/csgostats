@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/de_inferno_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:foo="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageGun"
+                android:src="@drawable/awp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                android:background="#696969"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kills"
+                android:id="@+id/textView4"
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_alignTop="@+id/imageGun"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_toLeftOf="@+id/textView_killGun2"
+                android:layout_toStartOf="@+id/textView_killGun2" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:background="#696969"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView_killGun2"
+                android:text="-"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Hits"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView4"
+                android:layout_toRightOf="@+id/imageGun"
+                android:layout_toLeftOf="@+id/textView_killGun2"
+                android:layout_toStartOf="@+id/textView_killGun2" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView_hitsGun2"
+                android:text="-"
+                android:layout_below="@+id/textView_killGun2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:background="#696969"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Shots"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView3"
+                android:layout_toRightOf="@+id/imageGun"
+                android:layout_toLeftOf="@+id/textView_hitsGun2"
+                android:layout_toStartOf="@+id/textView_hitsGun2" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:background="#696969"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView_shotsGun2"
+                android:text="-"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.cti.statscsgo.custom.CustomTextView
+                android:background="#000000"
+                foo:customFont="fonts/RobotoBold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/guns_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#000000">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Wins"
+                android:id="@+id/last_wins_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_wins"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_wins"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#696969">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kills"
+                android:id="@+id/last_kills_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_kills"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_kills"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#000000">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Deaths"
+                android:id="@+id/last_deaths_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_deaths"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_deaths"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#696969">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MVP"
+                android:id="@+id/last_mvp_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_mvp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_mvp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#000000">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Damage"
+                android:id="@+id/last_damage_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_damage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_damage"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#696969">
+
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Money spent"
+                android:id="@+id/last_money_text"
+                android:textSize="15dp"
+                android:layout_toLeftOf="@+id/last_money"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.cti.statscsgo.custom.CustomTextView
+                foo:customFont="fonts/RobotoLight.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="15dp"
+                android:id="@+id/last_money"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

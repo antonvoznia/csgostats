@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/main_appbar"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/csgo_mainImage"
+        android:layout_below="@+id/main_appbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/loginSteam"
+        android:src="@drawable/csgo_main"
+        />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:imeOptions="actionSearch"
+        android:ems="11"
+        android:id="@+id/loginSteam"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:textColor="#FFFFFF"
+        android:hint="@string/hint_text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:id="@+id/findButton"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/loginSteam"
+        android:layout_alignEnd="@+id/loginSteam"
+        android:layout_alignLeft="@+id/loginSteam"
+        android:layout_alignStart="@+id/loginSteam" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_names"
+        android:layout_below="@+id/findButton"
+        android:layout_alignLeft="@+id/findButton"
+        android:layout_alignStart="@+id/findButton"
+        android:layout_alignRight="@+id/findButton"
+        android:layout_alignEnd="@+id/findButton"
+        android:layout_above="@+id/powered_by" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/powered_by"
+        android:text="@string/steam_site"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:linksClickable="true"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/instruction"
+        android:id="@+id/instruction_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

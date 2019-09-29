@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_total_stats"
+            android:icon="@drawable/total_stats"
+            android:title="Total stats" />
+        <item
+            android:id="@+id/menu_weapon_stats"
+            android:icon="@drawable/weapon"
+            android:title="Weapon stats" />
+        <item
+            android:id="@+id/menu_maps_stats"
+            android:icon="@drawable/map"
+            android:title="Map stats" />
+        <item
+            android:id="@+id/menu_last_match"
+            android:icon="@drawable/last_match"
+            android:title="Last match" />
+    </group>
+
+</menu>

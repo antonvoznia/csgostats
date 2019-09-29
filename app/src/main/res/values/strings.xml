@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StatsCSGO</string>
+    <string name="steam_site">
+        &lt;u>
+        &lt;font color="#7fc9c2">Technology&lt;/font>
+        &lt;/u>
+    </string>
+    <string name="hint_text">
+        SteamID64 or CustomURL
+    </string>
+    <string name="instruction">
+        &lt;u>
+        &lt;font color="#7fc9c2">Instruction&lt;/font>
+        &lt;/u>
+    </string>
+    <string name="title_activity_main">CS GO Stats</string>
+    <string name="action_settings">Update stats</string>
+    <string name="title_activity_stats">CS GO Stats</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string-array name="tabs_text">
+        <item>Kills</item>
+        <item>Shots</item>
+        <item>Hits</item>
+    </string-array>
+
+</resources>

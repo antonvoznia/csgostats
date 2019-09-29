@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cti.statscsgo.fragments.NavigationDrawerFragment"
+    android:background="#2f2f2f"
+    >
+
+    <ImageView
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_darkMenu"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/csgo_main"
+        />
+    <ListView
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView_darkMenu" />
+</RelativeLayout>

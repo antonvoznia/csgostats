@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    >
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageMap"
+        android:src="@drawable/de_dust2"
+
+        />
+
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Medium Text"
+        android:textStyle="bold"
+        android:id="@+id/textMAPS_NAME"
+        android:background="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageMap"
+        android:layout_toEndOf="@+id/imageMap"/>
+
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wins"
+        android:id="@+id/textWins"
+        android:layout_below="@+id/textMAPS_NAME"
+        android:layout_toRightOf="@+id/imageMap"
+        android:layout_toStartOf="@+id/textViewWins"
+        android:layout_toLeftOf="@+id/textViewWins" />
+
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1"
+        android:id="@+id/textViewWins"
+        android:layout_alignTop="@+id/textWins"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rounds"
+        android:id="@+id/textRounds"
+        android:layout_below="@+id/textWins"
+        android:background="#696969"
+        android:layout_toLeftOf="@+id/textViewRounds"
+        android:layout_alignLeft="@+id/textWins"
+        android:layout_alignStart="@+id/textWins" />
+
+    <com.cti.statscsgo.custom.CustomTextView
+        foo:customFont="fonts/RobotoLight.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="123"
+        android:id="@+id/textViewRounds"
+        android:layout_below="@+id/textWins"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#696969"
+        />
+
+
+</RelativeLayout>
