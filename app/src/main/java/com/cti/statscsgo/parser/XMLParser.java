@@ -28,7 +28,7 @@ public class XMLParser {
     private int RTN_CONNECTION = 0, RTN_NOT_PUBLIC = 1, RTN_ALL_RIGHT = 2, RTN_DONT_PLAYED = 3,
     RTN_NOT_FOUND = 4;
 
-    private String API_URL_STATS = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=***OD&steamid=";
+    private String API_URL_STATS = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=32CBEDF75E9E25FA4A89EAD8EC1CC37EOD&steamid=";
 
     //Read full document in url and return it like String
     public static String getDocument(URL url) {
